@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours - Jannet Ammar</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <h1>Jannet Ammar</h1>
+    <p class="subtitle">Étudiante en 1ére année cycle ingénieur en génie informatique</p>
+
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Accueil</span>
+        </a></li>
+        <li><a href="about.html" class="nav-link active">
+          <span class="nav-icon">🎓</span>
+          <span class="nav-text">Parcours</span>
+        </a></li>
+        <li><a href="skills.html" class="nav-link">
+          <span class="nav-icon">💻</span>
+          <span class="nav-text">Compétences</span>
+        </a></li>
+        <li><a href="experiences.html" class="nav-link">
+          <span class="nav-icon">💼</span>
+          <span class="nav-text">Stages</span>
+        </a></li>
+        <li><a href="events.html" class="nav-link">
+          <span class="nav-icon">🎉</span>
+          <span class="nav-text">Évènements</span>
+        </a></li>
+        <li><a href="courses.html" class="nav-link">
+          <span class="nav-icon">📚</span>
+          <span class="nav-text">Matières</span>
+        </a></li>
+        <li><a href="hobbies.html" class="nav-link">
+          <span class="nav-icon">❤️</span>
+          <span class="nav-text">Passions</span>
+        </a></li>
+        <li><a href="quiz.html" class="nav-link">
+          <span class="nav-icon">🧩</span>
+          <span class="nav-text">Quiz</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link">
+          <span class="nav-icon">📧</span>
+          <span class="nav-text">Contact</span>
+        </a></li>
+        <li><a href="testimony.html" class="nav-link">
+          <span class="nav-icon">💬</span>
+          <span class="nav-text">Témoignage IIT</span>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-header">
+    <h2>🎓 Mon Parcours Académique</h2>
+    <p class="page-intro">Découvrez mon parcours éducatif et mes formations en génie informatique.</p>
+  </section>
+
+  <section class="timeline-section">
+    <div class="timeline">
+      <!-- Formation actuelle -->
+      <div class="timeline-item">
+        <div class="timeline-marker current"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025 - 2028</div>
+          <h3>Cycle Ingénieur en Génie Informatique</h3>
+          <p class="timeline-institution">Institut International de Technologie (IIT)</p>
+          <p class="timeline-description">
+            Formation d'ingénieur en génie informatique avec spécialisation en développement logiciel, 
+            systèmes d'information et technologies web. Acquisition de compétences approfondies en 
+            programmation, architecture logicielle et gestion de projets informatiques.
+          </p>
+          <div class="timeline-badge current-badge">En cours</div>
+        </div>
+      </div>
+
+      <!-- Licence -->
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2022 - 2025</div>
+          <h3>Licence en Informatique de Gestion</h3>
+          <p class="timeline-institution">Spécialité Business Intelligence a L'institut superieur de gestion industrielle de sfax</p>
+          <p class="timeline-description">
+            Formation complète en informatique de gestion avec une spécialisation en Business Intelligence. 
+            Acquisition de compétences en analyse de données, data mining, et outils de visualisation 
+            (Power BI, Talend). Développement de projets pratiques en gestion de bases de données et 
+            création de tableaux de bord décisionnels.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">Business Intelligence</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Talend</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baccalauréat -->
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2022</div>
+          <h3>Baccalauréat</h3>
+          <p class="timeline-institution">Baccalauréat Sciences Expérimentales a Monji Slim de Sfax</p>
+          <p class="timeline-description">
+            Obtention du baccalauréat en sciences expérimentales, première étape de mon parcours 
+            académique qui m'a permis de développer une base solide en mathématiques et en sciences, 
+            essentielle pour mes études en informatique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Diplômes avec photos -->
+  <section class="diplomas-section">
+    <h2>📜 Mes Diplômes</h2>
+    <p class="section-subtitle">Voici les diplômes que j'ai obtenus au cours de mon parcours académique :</p>
+    
+    <div class="diplomas-grid">
+      <!-- Diplôme de Licence -->
+      <div class="diploma-card">
+        <div class="diploma-header">
+          <h3>Licence en Informatique de Gestion</h3>
+          <p class="diploma-year">2022 - 2025</p>
+        </div>
+        <div class="diploma-image-container" onclick="openLightbox('images/diplomefac.jpeg', 'Diplôme de Licence en Informatique de Gestion')">
+          <img src="images/diplomefac.jpeg" alt="Diplôme de Licence en Informatique de Gestion" class="diploma-image zoomable" onerror="this.src='images/diplomes/placeholder.jpg'; this.alt='Photo du diplôme à ajouter';">
+          <div class="diploma-overlay">
+            <p class="diploma-instruction">Cliquez pour agrandir</p>
+            <p class="diploma-filename">Nom du fichier : licence.jpg</p>
+          </div>
+        </div>
+        <p class="diploma-description">Spécialité Business Intelligence</p>
+      </div>
+
+      <!-- Diplôme de Baccalauréat -->
+      <div class="diploma-card">
+        <div class="diploma-header">
+          <h3>Baccalauréat</h3>
+          <p class="diploma-year">2022</p>
+        </div>
+        <div class="diploma-image-container" onclick="openLightbox('images/diplomebac.jpeg', 'Diplôme de Baccalauréat Sciences Expérimentales')">
+          <img src="images/diplomebac.jpeg" alt="Diplôme de Baccalauréat Sciences Expérimentales" class="diploma-image zoomable" onerror="this.src='images/diplomes/placeholder.jpg'; this.alt='Photo du diplôme à ajouter';">
+          <div class="diploma-overlay">
+            <p class="diploma-instruction">Cliquez pour agrandir</p>
+            <p class="diploma-filename">Nom du fichier : bac.jpg</p>
+          </div>
+        </div>
+        <p class="diploma-description">Baccalauréat Sciences Expérimentales</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="achievements-section">
+    <h2>🏆 Réalisations & Distinctions</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <div class="achievement-icon">📊</div>
+        <h3>Projets BI</h3>
+        <p>Développement de plusieurs projets en Business Intelligence avec Power BI et Talend</p>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">💻</div>
+        <h3>Développement</h3>
+        <p>Réalisation de projets web et mobiles dans le cadre de ma formation</p>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">🎓</div>
+        <h3>Excellence Académique</h3>
+        <p>Maintien d'un bon niveau académique tout au long de mon parcours</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="objectives-section">
+    <h2>🎯 Objectifs Professionnels</h2>
+    <div class="objectives-content">
+      <div class="objective-item">
+        <span class="objective-icon">🚀</span>
+        <div>
+          <h3>Court terme</h3>
+          <p>Obtenir mon diplôme d'ingénieur en génie informatique et acquérir une expérience professionnelle solide dans le développement logiciel.</p>
+        </div>
+      </div>
+      <div class="objective-item">
+        <span class="objective-icon">🌟</span>
+        <div>
+          <h3>Moyen terme</h3>
+          <p>Devenir une ingénieure spécialisée en développement web et mobile, capable de concevoir et développer des solutions innovantes.</p>
+        </div>
+      </div>
+      <div class="objective-item">
+        <span class="objective-icon">💡</span>
+        <div>
+          <h3>Long terme</h3>
+          <p>Évoluer vers des postes de leadership technique et contribuer à des projets d'envergure dans le domaine de l'informatique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+  <img id="lightbox-img" class="lightbox-image" src="" alt="">
+  <p id="lightbox-caption" class="lightbox-caption"></p>
+</div>
+
+<script>
+function openLightbox(imageSrc, imageAlt) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  
+  lightboxImg.src = imageSrc;
+  lightboxCaption.textContent = imageAlt;
+  lightbox.style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Empêcher le scroll
+}
+
+function closeLightbox(event) {
+  // Ne fermer que si on clique sur le fond ou le bouton de fermeture
+  if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Réactiver le scroll
+  }
+}
+
+// Fermer avec la touche Escape
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox.style.display === 'flex') {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  }
+});
+</script>
+
+<footer>
+  <p>© 2025 — Jannet Ammar</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Jannet Ammar</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <h1>Jannet Ammar</h1>
+    <p class="subtitle">Étudiante en 1ére année cycle ingénieur en génie informatique</p>
+
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Accueil</span>
+        </a></li>
+        <li><a href="about.html" class="nav-link">
+          <span class="nav-icon">🎓</span>
+          <span class="nav-text">Parcours</span>
+        </a></li>
+        <li><a href="skills.html" class="nav-link">
+          <span class="nav-icon">💻</span>
+          <span class="nav-text">Compétences</span>
+        </a></li>
+        <li><a href="experiences.html" class="nav-link">
+          <span class="nav-icon">💼</span>
+          <span class="nav-text">Stages</span>
+        </a></li>
+        <li><a href="events.html" class="nav-link">
+          <span class="nav-icon">🎉</span>
+          <span class="nav-text">Évènements</span>
+        </a></li>
+        <li><a href="courses.html" class="nav-link">
+          <span class="nav-icon">📚</span>
+          <span class="nav-text">Matières</span>
+        </a></li>
+        <li><a href="hobbies.html" class="nav-link">
+          <span class="nav-icon">❤️</span>
+          <span class="nav-text">Passions</span>
+        </a></li>
+        <li><a href="quiz.html" class="nav-link">
+          <span class="nav-icon">🧩</span>
+          <span class="nav-text">Quiz</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link active">
+          <span class="nav-icon">📧</span>
+          <span class="nav-text">Contact</span>
+        </a></li>
+        <li><a href="testimony.html" class="nav-link">
+          <span class="nav-icon">💬</span>
+          <span class="nav-text">Témoignage IIT</span>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-header">
+    <h2>📧 Contactez-moi</h2>
+    <p class="page-intro">N'hésitez pas à me contacter pour toute question, collaboration ou opportunité professionnelle. Je serai ravie d'échanger avec vous !</p>
+  </section>
+
+  <div class="contact-wrapper">
+    <!-- Informations de contact -->
+    <section class="contact-info">
+      <h3>Informations de Contact</h3>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:jannetammar22@gmail.com">jannetammar22@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          
+        <div class="contact-item">
+          <span class="contact-icon">💻</span>
+          <div>
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/JanetAmmar" target="_blank">github.com/jannet-ammar</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <h4>Localisation</h4>
+            <p>Tunis, Tunisie</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-availability">
+        <h4>Disponibilité</h4>
+        <p>Je suis disponible pour :</p>
+        <ul>
+          <li>Stages et opportunités professionnelles</li>
+          <li>Projets collaboratifs</li>
+          <li>Échanges et discussions techniques</li>
+          <li>Mentorat et partage d'expérience</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section class="contact-form-section">
+      <h3>Envoyez-moi un message</h3>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom complet *</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="votre.email@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Sujet *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Sélectionnez un sujet</option>
+            <option value="opportunity">Opportunité professionnelle</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="question">Question</option>
+            <option value="other">Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="consent" required>
+            <span>J'accepte que mes données soient utilisées pour me recontacter *</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-submit-form">
+          <span>Envoyer le message</span>
+          <span class="btn-icon">➤</span>
+        </button>
+      </form>
+
+      <div id="formMessage" class="form-message" style="display: none;"></div>
+    </section>
+  </div>
+</main>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const formMessage = document.getElementById('formMessage');
+  const formData = new FormData(this);
+  
+  // Simulation d'envoi (à remplacer par un vrai backend)
+  formMessage.style.display = 'block';
+  formMessage.className = 'form-message success';
+  formMessage.textContent = '✅ Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.';
+  
+  // Réinitialiser le formulaire
+  this.reset();
+  
+  // Masquer le message après 5 secondes
+  setTimeout(() => {
+    formMessage.style.display = 'none';
+  }, 5000);
+});
+</script>
+
+<footer>
+  <p>© 2025 — Jannet Ammar</p>
+</footer>
+</body>
+</html>

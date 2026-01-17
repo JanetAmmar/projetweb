@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Jannet Ammar</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <h1>Jannet Ammar</h1>
+    <p class="subtitle">Étudiante en 1ére année cycle ingénieur en génie informatique</p>
+
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Accueil</span>
+        </a></li>
+        <li><a href="about.html" class="nav-link">
+          <span class="nav-icon">🎓</span>
+          <span class="nav-text">Parcours</span>
+        </a></li>
+        <li><a href="skills.html" class="nav-link">
+          <span class="nav-icon">💻</span>
+          <span class="nav-text">Compétences</span>
+        </a></li>
+        <li><a href="experiences.html" class="nav-link">
+          <span class="nav-icon">💼</span>
+          <span class="nav-text">Stages</span>
+        </a></li>
+        <li><a href="events.html" class="nav-link">
+          <span class="nav-icon">🎉</span>
+          <span class="nav-text">Évènements</span>
+        </a></li>
+        <li><a href="courses.html" class="nav-link">
+          <span class="nav-icon">📚</span>
+          <span class="nav-text">Matières</span>
+        </a></li>
+        <li><a href="hobbies.html" class="nav-link">
+          <span class="nav-icon">❤️</span>
+          <span class="nav-text">Passions</span>
+        </a></li>
+        <li><a href="quiz.html" class="nav-link active">
+          <span class="nav-icon">🧩</span>
+          <span class="nav-text">Quiz</span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link">
+          <span class="nav-icon">📧</span>
+          <span class="nav-text">Contact</span>
+        </a></li>
+        <li><a href="testimony.html" class="nav-link">
+          <span class="nav-icon">💬</span>
+          <span class="nav-text">Témoignage IIT</span>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="quiz-header">
+    <h2>🧩 Quiz : Culture Informatique</h2>
+    <p class="quiz-description">Testez vos connaissances en informatique avec ce quiz de 15 questions. Bonne chance !</p>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressBar"></div>
+      </div>
+      <span class="progress-text" id="progressText">0 / 15 questions</span>
+    </div>
+  </section>
+
+  <form id="quizForm">
+    <div class="quiz-questions">
+      <!-- Question 1 -->
+      <div class="question-card" data-question="1">
+        <div class="question-header">
+          <span class="question-number">Question 1</span>
+          <span class="question-topic">HTML</span>
+        </div>
+        <p class="question-text">HTML signifie :</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q1" value="a">
+            <span>Hyper Trainer Markup Language</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q1" value="b">
+            <span>Hyper Text Markup Language</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q1" value="c">
+            <span>Home Tool Markup Language</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-card" data-question="2">
+        <div class="question-header">
+          <span class="question-number">Question 2</span>
+          <span class="question-topic">JavaScript</span>
+        </div>
+        <p class="question-text">JavaScript est :</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q2" value="a">
+            <span>Un langage de style</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q2" value="b">
+            <span>Un langage de programmation</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q2" value="c">
+            <span>Une base de données</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-card" data-question="3">
+        <div class="question-header">
+          <span class="question-number">Question 3</span>
+          <span class="question-topic">CSS</span>
+        </div>
+        <p class="question-text">Que signifie CSS ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q3" value="a">
+            <span>Computer Style Sheets</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q3" value="b">
+            <span>Cascading Style Sheets</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q3" value="c">
+            <span>Creative Style Sheets</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-card" data-question="4">
+        <div class="question-header">
+          <span class="question-number">Question 4</span>
+          <span class="question-topic">Réseaux</span>
+        </div>
+        <p class="question-text">Quel protocole est utilisé pour le transfert de fichiers sur Internet ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q4" value="a">
+            <span>HTTP</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q4" value="b">
+            <span>FTP</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q4" value="c">
+            <span>SMTP</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question-card" data-question="5">
+        <div class="question-header">
+          <span class="question-number">Question 5</span>
+          <span class="question-topic">Base de données</span>
+        </div>
+        <p class="question-text">SQL signifie :</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q5" value="a">
+            <span>Structured Query Language</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q5" value="b">
+            <span>Simple Query Language</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q5" value="c">
+            <span>Standard Query Language</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question-card" data-question="6">
+        <div class="question-header">
+          <span class="question-number">Question 6</span>
+          <span class="question-topic">Programmation</span>
+        </div>
+        <p class="question-text">Quel langage est principalement utilisé pour le développement backend ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q6" value="a">
+            <span>HTML</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q6" value="b">
+            <span>Python</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q6" value="c">
+            <span>CSS</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question-card" data-question="7">
+        <div class="question-header">
+          <span class="question-number">Question 7</span>
+          <span class="question-topic">Sécurité</span>
+        </div>
+        <p class="question-text">Qu'est-ce qu'un firewall (pare-feu) ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q7" value="a">
+            <span>Un système de protection réseau</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q7" value="b">
+            <span>Un type de virus</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q7" value="c">
+            <span>Un langage de programmation</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question-card" data-question="8">
+        <div class="question-header">
+          <span class="question-number">Question 8</span>
+          <span class="question-topic">Web</span>
+        </div>
+        <p class="question-text">Quel est le port par défaut pour HTTP ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q8" value="a">
+            <span>80</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q8" value="b">
+            <span>443</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q8" value="c">
+            <span>8080</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question-card" data-question="9">
+        <div class="question-header">
+          <span class="question-number">Question 9</span>
+          <span class="question-topic">Algorithmes</span>
+        </div>
+        <p class="question-text">Quelle est la complexité temporelle moyenne du tri rapide (Quick Sort) ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q9" value="a">
+            <span>O(n²)</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q9" value="b">
+            <span>O(n log n)</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q9" value="c">
+            <span>O(n)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question-card" data-question="10">
+        <div class="question-header">
+          <span class="question-number">Question 10</span>
+          <span class="question-topic">Git</span>
+        </div>
+        <p class="question-text">Quelle commande Git permet de créer une nouvelle branche ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q10" value="a">
+            <span>git branch</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q10" value="b">
+            <span>git checkout</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q10" value="c">
+            <span>git commit</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 11 -->
+      <div class="question-card" data-question="11">
+        <div class="question-header">
+          <span class="question-number">Question 11</span>
+          <span class="question-topic">Web</span>
+        </div>
+        <p class="question-text">Quel est le port par défaut pour HTTPS ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q11" value="a">
+            <span>80</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q11" value="b">
+            <span>443</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q11" value="c">
+            <span>3306</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 12 -->
+      <div class="question-card" data-question="12">
+        <div class="question-header">
+          <span class="question-number">Question 12</span>
+          <span class="question-topic">Web</span>
+        </div>
+        <p class="question-text">Quel est le rôle du DOM en JavaScript ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q12" value="a">
+            <span>Accéder et modifier les éléments HTML</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q12" value="b">
+            <span>Gérer les bases de données</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q12" value="c">
+            <span>Créer des animations CSS</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 13 -->
+      <div class="question-card" data-question="13">
+        <div class="question-header">
+          <span class="question-number">Question 13</span>
+          <span class="question-topic">Web</span>
+        </div>
+        <p class="question-text">Qu'est-ce que le responsive design ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q13" value="a">
+            <span>Un site qui s'adapte à tous les appareils</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q13" value="b">
+            <span>Un type de navigateur</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q13" value="c">
+            <span>Un langage de programmation</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 14 -->
+      <div class="question-card" data-question="14">
+        <div class="question-header">
+          <span class="question-number">Question 14</span>
+          <span class="question-topic">Web</span>
+        </div>
+        <p class="question-text">Quel framework JavaScript est utilisé pour construire des interfaces utilisateur ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q14" value="a">
+            <span>React</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q14" value="b">
+            <span>Django</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q14" value="c">
+            <span>Express</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 15 -->
+      <div class="question-card" data-question="15">
+        <div class="question-header">
+          <span class="question-number">Question 15</span>
+          <span class="question-topic">Web</span>
+        </div>
+        <p class="question-text">Quel attribut HTML est utilisé pour créer un lien hypertexte ?</p>
+        <div class="answers">
+          <label class="answer-option">
+            <input type="radio" name="q15" value="a">
+            <span>&lt;link&gt;</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q15" value="b">
+            <span>&lt;a href=""&gt;</span>
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="q15" value="c">
+            <span>&lt;url&gt;</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-actions">
+      <button type="button" id="submitQuiz" class="btn-submit">Valider le quiz</button>
+      <button type="button" id="resetQuiz" class="btn-reset" style="display: none;">Recommencer</button>
+    </div>
+  </form>
+
+  <section id="result" class="result-section" hidden>
+    <div class="result-card">
+      <h2>📊 Résultats du Quiz</h2>
+      <div class="score-display">
+        <div class="score-circle">
+          <span class="score-value" id="scoreValue">0</span>
+          <span class="score-total">/ 15</span>
+        </div>
+        <div class="score-percentage" id="scorePercentage">0%</div>
+      </div>
+      <p class="score-message" id="scoreMessage"></p>
+      <div id="corrections" class="corrections"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/quiz.js"></script>
+
+<footer>
+  <p>© 2025 — Jannet Ammar</p>
+</footer>
+
+</body>
+</html>
